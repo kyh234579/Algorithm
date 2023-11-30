@@ -16,4 +16,4 @@ def solution(n, times):
         else:
             left=mid+1
         
-    return answer
+    return answer 
