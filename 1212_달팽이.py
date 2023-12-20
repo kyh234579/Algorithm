@@ -1,10 +1,5 @@
+import math
 A,B,V = map(int,input().split())
-sum=0
-cnt=0
-while True:
-    sum+=(A-B)
-    if sum >= V:
-        break
-    cnt+=1
-
-print(cnt)
+# a* day - b*(day-1) >= V 이 식을 이항한 것.
+day=(V-B)/(A-B)
+print(math.ceil(day))

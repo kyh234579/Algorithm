@@ -1,11 +1,7 @@
-from itertools import combinations
+a,b,c,d,e,f =map(int,input().split())
 
-N,M=map(int,input().split())
-arr=list(map(int,input().split()))
-ans=[]
-for c in combinations(arr,3):
-    if sum(c) <= M:
-        ans.append(c)
-ans.sort(key=lambda x:sum(x))
-
-print(sum(ans[-1]))
+for i in range(-999,10000):
+    for j in range(-999,10000):
+        if a*i + b*j == c and c*i + d*j == f:
+            print(i,j)
+            break
