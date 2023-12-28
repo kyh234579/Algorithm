@@ -10,9 +10,12 @@ for i in range(n-1):
     arr.append((a,b))
     if i+1 < n: dp[i+1]=min(dp[i+1],dp[i]+a)
     if i+2 < n: dp[i+2]=min(dp[i+2],dp[i]+b)
+    
 _min = dp[-1] #두 경우만 고려한, 마지막 돌까지의 에너지
 k=int(input())
+
 #dp 안 모든 경우에 매우 큰 점프를 적용하여 최소값 갱신.
+
 for i in range(3,n):
     e,dp1,dp2 = dp[i-3]+k,1e9,1e9
     for j in range(i,n-1):
