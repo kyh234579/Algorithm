@@ -13,7 +13,7 @@ def bfs(graph):
         for j in range(m):
             if graph[i][j] == 2:
                 queue.append((i,j))
-        
+
     while queue:
         x,y=queue.popleft()
 
@@ -25,8 +25,8 @@ def bfs(graph):
             if graph[nx][ny] == 0:
                 graph[nx][ny]=2
                 queue.append((nx,ny))
-
     result=0
+    
     for i in range(n):
         result+=graph[i].count(0)
     return result

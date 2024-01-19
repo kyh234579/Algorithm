@@ -12,7 +12,6 @@ while Q:
     if c%2==0 and visited[c//2]==0:
         Q.append(c//2)
         visited[c//2]=visited[c]+1
-
     if visited[c-1]==0:
         Q.append(c-1)
         visited[c-1]=visited[c]+1
