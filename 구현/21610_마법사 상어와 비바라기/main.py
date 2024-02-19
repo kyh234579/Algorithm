@@ -16,7 +16,7 @@ for _ in range(m):
         nx=(x+s*dx[d-1])%n
         ny=(y+s*dy[d-1])%n
         #구름 위치 체크
-        visited[nx][ny]=True
+        visited[nx][ny]=True 
     #2단계, 구름 모두 이동이 끝난 후, 물양 추가
     for i in range(n):
         for j in range(n):
