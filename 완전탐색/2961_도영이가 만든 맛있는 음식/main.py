@@ -8,10 +8,9 @@ min_value=1e9
 def dfs(idx,a,b,cnt):
     global min_value
     #가지치기
-    if cnt>0:
-        min_value=min(min_value,abs(a-b))
-    #깊이
     if idx==n:
+        if cnt>0:
+            min_value=min(min_value,abs(a-b))
         return
     #본인포함
     dfs(idx+1,a*ingredients[idx][0],b+ingredients[idx][1],cnt+1)

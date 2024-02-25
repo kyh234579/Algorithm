@@ -7,6 +7,7 @@ for _ in range(n):
     eggs.append([s,w])
 def dfs(start):
     global answer
+    #가지치기
     if start==n:
         total=0
         for i in range(n):
