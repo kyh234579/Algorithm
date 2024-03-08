@@ -10,7 +10,7 @@ while left <= right:
         sum-=arr[left]
         left+=1
     else:
-        right+=1
+        right+=1    
         if right < n:
             sum+=arr[right]
         else:
