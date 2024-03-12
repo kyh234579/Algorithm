@@ -6,7 +6,7 @@ ans=0
 for start in range(n):
     while end < n:
         if s[end]%2==0:
-            end+=1
+            end+=1  
         elif s[end]%2!=0 and k_cnt<k:
             k_cnt+=1
             end+=1
