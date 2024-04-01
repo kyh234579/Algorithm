@@ -29,7 +29,6 @@ def bfs(x,y):
     for x,y,sea in seaList:
         #0이상이어야하기 때문에
         board[x][y]=max(0,board[x][y]-sea)
-
     #그룹 체크
     return 1
 
