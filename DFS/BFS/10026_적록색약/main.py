@@ -16,14 +16,14 @@ def bfs(x,y):
             if 0<=nx<n and 0<=ny<n and board[nx][ny]==now and not visited[nx][ny]:
                 q.append((nx,ny))
                 visited[nx][ny]=1
-
+    return 1
 visited=[[0]*n for _ in range(n)]
 cnt=0
 for i in range(n):
     for j in range(n):
         if not visited[i][j]:
-            bfs(i,j)
-            cnt+=1
+            cnt+=bfs(i,j)
+          
 #적록색약 인경우
 for i in range(n):
     for j in range(n):
@@ -35,6 +35,5 @@ cnt_1=0
 for i in range(n):
     for j in range(n):
         if not visited[i][j]:
-            bfs(i,j)
-            cnt_1+=1
+            cnt_1+=bfs(i,j)
 print(cnt,cnt_1)

@@ -37,7 +37,7 @@ wall_comb=combinations(blank,3)
 for wall in wall_comb:
     #매번 새로운 조합의 3개의 벽을 세울때마다 초기 그래프를 가지고 시행해야함으로 초기 그래프 복사해줌.
     #2차원 배열 복사 -> deepcopy or 슬라이싱 사용, 슬라이싱이 시간 덜 소요
-    temp_graph=[g[:] for g in initgraph]
+    temp_graph=[g[:] for g in initgraph]    
     for x,y in wall:
         temp_graph[x][y]=1
     result=max(result,bfs(temp_graph))
