@@ -2,7 +2,6 @@ from collections import deque
 n,m,t=map(int,input().split())
 map=[list(map(int,input().split())) for _ in range(n)]
 visited=[[-1]*m for _ in range(n)]
-
 q=deque()
 q.append([0,0])
 visited[0][0]=0

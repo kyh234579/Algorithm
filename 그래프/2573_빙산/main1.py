@@ -25,7 +25,6 @@ def bfs(x,y):
             else:
                 visited[nx][ny]=1
                 q.append([nx,ny])
-
     return 1
 
 #빙산 담기

@@ -1,8 +1,6 @@
 n=int(input())
 map=[list(map(int,input().split(' '))) for _ in range(n)]
-
 ans=0
-
 def dfs(x,y,dir):
     global ans
     if x==n-1 and y==n-1:

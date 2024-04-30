@@ -21,7 +21,7 @@ while q:
         if board[nx][ny]==0:
             visited[nx][ny]=visited[x][y]
             #빈방이면 벽보다 우선순위를 먼저 둔다.-> appendleft
-            q.appendleft([nx,ny])   
+            q.appendleft([nx,ny])
         if board[nx][ny]==1:
             visited[nx][ny]=visited[x][y]+1
             q.append([nx,ny])
