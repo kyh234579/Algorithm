@@ -10,7 +10,7 @@ for _ in range(n):
 t=0
 for _ in range(m):
     dumi[t].appendleft(init[t].popleft())
-    #도중에 자신의 덱에 아무것도 없다면
+    #도중에 자신의 덱에 아무것도 없다면 
     if not init[t]:
         break
     winner=-1
